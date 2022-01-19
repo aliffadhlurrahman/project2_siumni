@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <!-- /.login-logo -->
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <a href="../../index2.html" class="h1">Login</a>
+      </div>
+      <div class="card-body">
+
+        <form action="" method="post">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Email" id="email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" class="form-control" placeholder="Password" id="password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- /.col -->
+            <div class="col-6">
+              <button type="button" class="btn btn-primary btn-block" onclick="login()">Sign In</button>
+            </div>
+          </div>
+          <div class="row text-center">
+            <p class="mb-0 col-12">
+              <a href="register.html" class="text-center">Registrasi User</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- /.login-card-body -->
+    </div>
+  </div>
+  <!-- /.login-box -->
+  </div>
+  <div>
+    <p class="text-center mt-3"><b>Note</b></p>
+    <table>
+      <tr>
+        <td>Email</td>
+        <td>: undefindcode@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>: uncode</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <script>
+    function login() {
+      let Email = document.getElementById("email").value;
+      let Pass = document.getElementById("password").value;
+      if (Email == "undefindcode@gmail.com" && Pass == "uncode") {
+        alert("Login Was Successful");
+        location.href = "./dashboard"
+      } else {
+        alert("Email or Password is wrong")
+      }
+    }
+    function gg(){
+      alert("haii");
+    }
+  </script>
+</body>
+
+</html>
