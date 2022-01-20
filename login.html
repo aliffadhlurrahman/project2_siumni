@@ -28,7 +28,7 @@
 
         <form action="" method="post">
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Email" id="email">
+            <input type="email" class="form-control" placeholder="Email" id="usname">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -66,8 +66,8 @@
     <p class="text-center mt-3"><b>Note</b></p>
     <table>
       <tr>
-        <td>Email</td>
-        <td>: undefindcode@gmail.com</td>
+        <td>Username</td>
+        <td>: undefindcode</td>
       </tr>
       <tr>
         <td>Password</td>
@@ -84,17 +84,14 @@
   <script src="dist/js/adminlte.min.js"></script>
   <script>
     function login() {
-      let Email = document.getElementById("email").value;
+      let Email = document.getElementById("usname").value;
       let Pass = document.getElementById("password").value;
-      if (Email == "undefindcode@gmail.com" && Pass == "uncode") {
+      if (Email == "undefindcode" && Pass == "uncode") {
         alert("Login Was Successful");
-        location.href = "./dashboard"
+        location.href = "dataMahasiswa.html"
       } else {
         alert("Email or Password is wrong")
       }
-    }
-    function gg(){
-      alert("haii");
     }
   </script>
 </body>
